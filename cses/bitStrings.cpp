@@ -4,12 +4,17 @@
 #include <algorithm>
 #include <map>
 #include <math.h>
-#include <set>
 using namespace std;
 typedef long long ll;
 const ll mod = 1e9 + 7;
 int main()
 {
-
-	return 0;
+    int n, res = 1;
+    cin >> n;
+    for (int i = 1; i <= n; i++)
+    {
+        res = (res * 2) % mod;
+    }
+    cout << res;
+    return 0;
 }
